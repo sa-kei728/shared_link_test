@@ -23,6 +23,13 @@ cd ./linker_test
 ./test.elf
 ```
 
+4. rpathを埋め込まずにLD_LIBRARY_PATHの環境変数でlibfunc1の場所だけ指定した場合の動き
+```
+cd ./linker_test_no_rpath
+./build.sh
+./exec.sh
+```
+
 ## 補足
 - test.elfのダイナミックセクション確認
 ```
